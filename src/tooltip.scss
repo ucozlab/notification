@@ -1,0 +1,111 @@
+.tooltip {
+  background-color: $white;
+  box-shadow: 0 0 2px fade_out($black, 0.8);
+  border-radius: 4px;
+  width: 292px;
+  display: inline-block;
+  position: relative;
+  &-content {
+    padding: 30px 30px 0 30px;
+  }
+  &-avatar {
+    width: 64px;
+    height: 64px;
+    float: left;
+    background-color: $gray;
+  }
+  &-info {
+    color: $gray3;
+    overflow: hidden;
+    padding-left: 30px;
+    &__name {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      color: $black;
+    }
+    &__age {
+      display: block;
+      margin: 7px 0 6px 0;
+    }
+  }
+  &-buttons {
+    clear: both;
+    padding: 15px 30px;
+    margin-top: 25px;
+    overflow: hidden;
+    button {
+      appearance: none;
+      border: 0;
+      line-height: 40px;
+      border-radius: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: $transition;
+      width: 107px;
+      font-size: 14px;
+    }
+    &__message {
+      float: left;
+      color: $white;
+      background-color: $blue;
+      &:hover {
+        background-color: darken($blue, 5%);
+      }
+    }
+    &__like {
+      float: right;
+      background-color: $gray;
+      &:hover {
+        background-color: darken($gray, 5%);
+      }
+    }
+  }
+  &--right {
+    margin-left: 30px;
+  }
+  &--top {
+    &:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      transform: rotate(45deg);
+      top: -7px;
+      left: 20px;
+      background-color: $white;
+      box-shadow: 0 0 2px fade_out($black, 0.8);
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      background-color: $white;
+    }
+  }
+  &--black {
+    background-color: $black;
+    color: $white;
+    .tooltip-avatar {
+      background-color: $black3;
+    }
+    .tooltip-info__name {
+      color: $white;
+    }
+    .tooltip-buttons {
+      background-color: $black2;
+      &__like {
+        color: $white;
+        background-color: $black;
+        &:hover {
+          background-color: darken($black, 5%);
+        }
+      }
+    }
+  }
+}

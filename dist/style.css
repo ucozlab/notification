@@ -105,4 +105,108 @@ code, kbd, pre, samp {
   font-family: monospace,monospace;
   font-size: 1em; }
 
+body {
+  color: #333333;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 14px; }
+
+.wrapper {
+  margin: 200px auto;
+  width: 684px;
+  background-color: #e0e0e0;
+  padding: 30px; }
+
+.tooltip {
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.2);
+  border-radius: 4px;
+  width: 292px;
+  display: inline-block;
+  position: relative; }
+  .tooltip-content {
+    padding: 30px 30px 0 30px; }
+  .tooltip-avatar {
+    width: 64px;
+    height: 64px;
+    float: left;
+    background-color: #e0e0e0; }
+  .tooltip-info {
+    color: #888888;
+    overflow: hidden;
+    padding-left: 30px; }
+    .tooltip-info__name {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      color: #333333; }
+    .tooltip-info__age {
+      display: block;
+      margin: 7px 0 6px 0; }
+  .tooltip-buttons {
+    clear: both;
+    padding: 15px 30px;
+    margin-top: 25px;
+    overflow: hidden; }
+    .tooltip-buttons button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      line-height: 40px;
+      border-radius: 4px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      width: 107px;
+      font-size: 14px; }
+    .tooltip-buttons__message {
+      float: left;
+      color: #ffffff;
+      background-color: #00bcd4; }
+      .tooltip-buttons__message:hover {
+        background-color: #00a5bb; }
+    .tooltip-buttons__like {
+      float: right;
+      background-color: #e0e0e0; }
+      .tooltip-buttons__like:hover {
+        background-color: lightgray; }
+  .tooltip--right {
+    margin-left: 30px; }
+  .tooltip--top:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -7px;
+    left: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px rgba(51, 51, 51, 0.2); }
+  .tooltip--top:after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    background-color: #ffffff; }
+  .tooltip--black {
+    background-color: #333333;
+    color: #ffffff; }
+    .tooltip--black .tooltip-avatar {
+      background-color: #545454; }
+    .tooltip--black .tooltip-info__name {
+      color: #ffffff; }
+    .tooltip--black .tooltip-buttons {
+      background-color: #444444; }
+      .tooltip--black .tooltip-buttons__like {
+        color: #ffffff;
+        background-color: #333333; }
+        .tooltip--black .tooltip-buttons__like:hover {
+          background-color: #262626; }
+
 /*# sourceMappingURL=style.css.map */
