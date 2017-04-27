@@ -182,7 +182,7 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -7px;
-    left: 20px;
+    left: 30px;
     background-color: #ffffff;
     box-shadow: 0 0 2px rgba(51, 51, 51, 0.2); }
   .tooltip--top:after {
@@ -192,11 +192,24 @@ body {
     height: 15px;
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 25px;
     background-color: #ffffff; }
   .tooltip--black {
     background-color: #333333;
-    color: #ffffff; }
+    color: #ffffff;
+    box-shadow: none; }
+    .tooltip--black:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      right: -7px;
+      top: 35px;
+      background-color: #333333; }
     .tooltip--black .tooltip-avatar {
       background-color: #545454; }
     .tooltip--black .tooltip-info__name {
