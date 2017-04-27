@@ -158,7 +158,8 @@ body {
       text-transform: uppercase;
       transition: all 0.3s ease;
       width: 107px;
-      font-size: 14px; }
+      font-size: 14px;
+      cursor: pointer; }
     .tooltip-buttons__message {
       float: left;
       color: #ffffff;
