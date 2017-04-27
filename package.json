@@ -1,0 +1,27 @@
+{
+  "name": "notification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucozlab/notification.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucozlab/notification/issues"
+  },
+  "homepage": "https://github.com/ucozlab/notification#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
